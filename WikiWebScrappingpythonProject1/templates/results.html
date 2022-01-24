@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#" />
+  <title>Review Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .myDiv {
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <div class=myDiv>
+      <h2>Summary of the Wikipedia Topic</h2>
+      <p>This page contains summary, references and image base 64 encoding about the topic searched in wikipedia</p>
+  </div>
+      <table align="left" style="table-layout: fixed; width: 100%" border="1">
+        <tbody>
+          <thead>
+            <tr align="left" valign="top">
+                <th width="10%" style="text-align:left" ><b>Product-Searched</b></th>
+                <th width="15%" style="text-align:left"><b>Summary</b></th>
+                <th width="30%" style="text-align:left" ><b>References</b></th>
+                <th width="35%" style="text-align:left"><b>Base64 Image String</b></th>
+             </tr>
+        </thead>
+            {% if rows is not none %}
+            {% for review in rows %}
+            <tr align="left" valign="top">
+                <td align="left" valign="top">{{review.Topic}}</td>
+                <td align="left" valign="top">{{review.Summary}}</td>
+                <td style="word-wrap: break-word" align="left" valign="top">{{review.References}}</td>
+                <td style="word-wrap: break-word" align="left" valign="top">{{review.Base64_Image_String}}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+        </tbody>
+      </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+
+
+{% block head %}
+
+<title>Calculator</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Wiki Web Scrapper Test</h1>
+
+    <div class="form">
+        <form action="/DisplayResult" method="POST">
+            <label for="operation">Choose a topic</label>
+
+<select id="operation" name="operation">
+  <option value="topic">topic</option>
+</select>
+            <input type="text" name="search" id="search">
+            <input type="submit" value="scrap">
+        </form>
+    </div>
+</div>
+{% endblock %}

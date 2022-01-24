@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Review Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% if rows is none %}
+        <meta http-equiv="refresh" content="10" />
+    {% endif %}
+
+</head>
+<body>
+  <div class="table-users">
+   <div class="header">Summary of the Topic Searched</div>
+      <table align="left" style="width:80%" border="1">
+        <tbody>
+          <thead>
+            <tr align="left" valign="top">
+                <th style="text-align:left" ><b>Product-Searched</b></th>
+                <th style="text-align:left"><b>Summary</b></th>
+                <th style="text-align:left" ><b>References</b></th>
+                <th style="text-align:left"><b>Base64 Image String</b></th>
+             </tr>
+        </thead>
+            {% if rows is not none %}
+            {% for review in rows %}
+            <tr align="left" valign="top">
+                <td align="left" valign="top">{{review.Topic}}</td>
+                <td align="left" valign="top">{{review.Summary}}</td>
+                <td align="left" valign="top">{{review.References}}</td>
+                <td align="left" valign="top">{{review.Base64_Image_String}}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+        </tbody>
+      </table>
+</div>
+</body>
+</html>
