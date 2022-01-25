@@ -36,3 +36,4 @@ This is a basic web application that performs the following tasks:
 4. Extract the images (.png, .jpeg, .jpg etc.,), Convert them to base64 format and store it in MongoDB Atlas.
 5. Display step 2-3 in the table format in the web page.
 6. Deploy the application on Heroku.
+https://wiki-scrapper-project.herokuapp.com/
