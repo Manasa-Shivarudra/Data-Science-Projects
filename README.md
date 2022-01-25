@@ -27,7 +27,7 @@ This is a univariate Linear Regression where we have implemneted the following:
    Example 1: Prediction of the Profit value for the population of 40000 = $8781.0
    Example 2: Prediction of the Profit Value for the population of 83000 = $60069.0
    
-   
+# End to End Project:   
 ## Wiki WebScrapping Flask Project:
 This is a basic web application that performs the following tasks:
 1. Display a initial web page which asks to Enter a topic to be searched in Wiki.
