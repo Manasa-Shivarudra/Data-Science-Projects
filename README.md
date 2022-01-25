@@ -1,6 +1,6 @@
 # Data-Science-Projects
 
-**Linear Regression: **
+## Linear Regression:
 This is a univariate Linear Regression where we have implemneted the following:
 1. The bike sharing data is a small data set with 2 features Population and Profit - That is how much profit was made per population for bike sales.
 2. Loading the dataset and libraries - matplotlib, pandas, numpy, seaborn and Axes3D from mpl_toolkits.mplot3d
