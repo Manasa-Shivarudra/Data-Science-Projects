@@ -63,6 +63,7 @@ Implemented as Follows:
 Problem Statement: Predict the chance of admission into a particular university based on student's profile
 Input features: GRE Scores, TOEFL Scores, University Rating, Statement of Purpose, Letter of Recommendation (Strength out of 5), Undergraduate GPA, Research experience.
 Output : Chance of admission(0 - no admission, 1- admission)
+
 TASK #1: IMPORT LIBRARIES AND DATASET: The data set is taken from kaggle https://www.kaggle.com/mohansacharya/graduate-admissions
 
 TASK #2: PERFORM EXPLORATORY DATA ANALYSIS: Check for null values
