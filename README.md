@@ -64,17 +64,28 @@ Problem Statement: Predict the chance of admission into a particular university 
 Input features: GRE Scores, TOEFL Scores, University Rating, Statement of Purpose, Letter of Recommendation (Strength out of 5), Undergraduate GPA, Research experience.
 Output : Chance of admission(0 - no admission, 1- admission)
 TASK #1: IMPORT LIBRARIES AND DATASET: The data set is taken from kaggle https://www.kaggle.com/mohansacharya/graduate-admissions
+
 TASK #2: PERFORM EXPLORATORY DATA ANALYSIS: Check for null values
+
 TASK #3: PERFORM DATA VISUALIZATION: visualize using the histogram to check how the data is distributed. Plot a pair plot using seaborn to check how its distributed across each          feature. Check the correlation of features in the dataset and plot a heatmap to check the correlation. 
+
 TASK #4: CREATE TRAINING AND TESTING DATASET: Create X as with all the input features and y as the chance of admission. Scale X and y using StandardScaler function in                    sklearn.preprocessing module. Create Training and Test data using train_test_split from sklearn.model_selection.
+
 TASK #5: TRAIN AND EVALUATE A LINEAR REGRESSION MODEL: Training the model by using LinearRegression function from sklearn.linear_model
+         
          The model accuracy is found to be 0.7804444
+         
 TASK #6: TRAIN AND EVALUATE AN ARTIFICIAL NEURAL NETWORK: Train the model using keras from tensorflow. 
+         
          ANN model Accuracy : 0.7280851602554321
+         
 TASK #7: TRAIN AND EVALUATE A DECISION TREE AND RANDOM FOREST MODELS: Train the model using DecisionTreeRegressor from sklearn.tree and RandomForestRegressor from                        sklearn.ensemble. 
+
          Decision Tree accuracy:  0.694118006321222
          Accuracy of Random Forest:  0.7812480726589323
+         
 TASK #8: CALCULATE REGRESSION MODEL KPIs: 
+         
          RMSE = 0.068 
          MSE = 0.004601440249559633 
          MAE = 0.049577850133253006 
