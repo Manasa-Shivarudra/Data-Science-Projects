@@ -2,7 +2,7 @@
 
 ## Mini Projects:
 
-## Linear Regression:
+## Linear Regression: Bike Sales
 This is a univariate Linear Regression where we have implemneted the following:
 1. DataSet- The bike sharing data is a small data set with 2 features Population and Profit - That is how much profit was made per population for bike sales.
 2. Loading the dataset and libraries - matplotlib, pandas, numpy, seaborn and Axes3D from mpl_toolkits.mplot3d
@@ -29,7 +29,7 @@ This is a univariate Linear Regression where we have implemneted the following:
    Example 1: Prediction of the Profit value for the population of 40000 = $8781.0
    Example 2: Prediction of the Profit Value for the population of 83000 = $60069.0
    
-## Multiple Linear Regression:
+## Multiple Linear Regression: Advertising Sales
 This is a mini project to build Multiple Linear Regression using different librarier in python- matplotlib, pandas, numpy, seaborn and Scikit-Learn.
 Scikitl-learn is used to calculate the regression, pandas for data management and seaborn for plotting. 
 Dataset: Adverstising dataset that predict sales revenue based on advertising spending through media such as TV, radio, and newspaper 
